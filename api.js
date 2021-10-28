@@ -34,3 +34,4 @@ const apisetup = function(){
 		}
 	}
 }
+var Page = new apisetup()
