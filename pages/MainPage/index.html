@@ -9,12 +9,13 @@
 	<h1>Aqui uma página de Exemplo publicada com o plano grátis com a API https://onlinepage.netlify.app/api.js</h1>
 	<h3>API</h3>
 	<span id="relogio"></span><br>
-	<iframe src="https://worldbuilder.netlify.app/" width="500px" height="500px"></iframe>
+	<iframe id="game"></iframe>
 	
 	<script src="https://onlinepage.netlify.app/api.js"></script>
 	
 	<script>
 		document.getElementById("relogio").innerText = `Relogio: ${Page.time.getSeconds()} Segundos, ${Page.time.getMinutes()} Minutos, ${Page.time.getHours()} Horas`
+		Page.emulator.setup("#game", "https://worldbuilder.netlify.app/")
 	</script>
 
 </body>
