@@ -6,9 +6,16 @@
 </head>
 <body>
 
-	<h1>Aqui uma página de Exemplo publicada com o plano grátis</h1>
-
+	<h1>Aqui uma página de Exemplo publicada com o plano grátis com a API https://onlinepage.netlify.app/api.js</h1>
+	<h3>API</h3>
+	<span id="relogio"></span>
 	<iframe src="https://worldbuilder.netlify.app/" width="500px" height="500px"></iframe>
+	
+	<script src="https://onlinepage.netlify.app/api.js"></script>
+	
+	<script>
+		document.getElementById("relogio").innerText = `Horas: $(Page.time.getSeconds()) Segundos`
+	</script>
 
 </body>
 </html>
