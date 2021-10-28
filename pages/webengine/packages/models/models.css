@@ -1,0 +1,54 @@
+.small{
+width: 20px;
+height: 20px;
+}
+
+.medium{
+width: 50px;
+height: 50px;
+}
+
+.big{
+width: 50px;
+height: 50px;
+}
+
+.red{
+background: red;
+}
+
+.green{
+background: green;
+}
+
+.blue{
+background: blue;
+}
+
+.black{
+background: black;
+}
+
+.yellow{
+background: yellow;
+}
+
+.white{
+background: white;
+}
+
+.cube{
+border-radius: 0%;
+}
+
+.tile{
+border-radius: 10%;
+}
+
+.lowsphere{
+border-radius: 50%;
+}
+
+.perfectsphere{
+border-radius: 100%;
+}
