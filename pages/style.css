@@ -1,0 +1,8 @@
+body{
+  background-color: black;
+}
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+*{
+	font-family: 'Allerta', sans-serif;
+	color: white;
+}
