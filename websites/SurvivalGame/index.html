@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WorldBuilder</title>
+	<link rel="icon" href="img/icon.png">
+	<meta meta name="viewport" content="width=device-width, user-scalable=no" />
+</head>
+<body>
+
+<img src="img/banner.png"><br>
+<img src="img/gear.png" id="gear" class="gear1"><br>
+<span>1.8</span><br>
+<b>by SaladaDev</b><br>
+
+<a href="game.html"><button>New World</button></a>
+
+<a href="https://www.paypal.com/donate/?business=3B4A2ZLVHVRD6&no_recurring=1&currency_code=BRL" target="_Blank"><button class="link">Donate</button></a>
+
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+	body{
+		background: lightgreen;
+	}
+	*{
+		font-family: 'Nunito', sans-serif;
+		color: white;
+		text-align: center;
+		font-size: 40px;
+		cursor: url('img/cursor.cur'), auto;
+	}
+	b{
+		font-size: 20px;
+	}
+	button{
+		color: grey;
+		background-color: #3d3d3d;
+		border: none;
+		border-radius: 5px;
+		transition: 0.2s;
+	}
+	button:hover{
+		color: white;
+		text-shadow: 0px 0px 5px white;
+		background-color: #4d4d4d;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	button:active{
+		color: lightgreen;
+		text-shadow: 0px 0px 5px lightgreen;
+	}
+	.link:hover{
+		color: lightblue;
+		text-shadow: 0px 0px 5px lightblue;
+		background-color: #4d4d4d;
+	}
+	.yt:hover{
+		color: #ff4b5b;
+		text-shadow: 0px 0px 5px #ff4b5b;
+		background-color: #4d4d4d;
+	}
+	.yt:active{
+		color: lightgreen;
+		text-shadow: 0px 0px 5px lightgreen;
+	}
+	.link:active{
+		color: lightgreen;
+		text-shadow: 0px 0px 5px lightgreen;
+	}
+
+	#gear{
+		width: 50px;
+		height: 50px;
+	}
+
+
+</style>
+
+<script type="text/javascript">
+	var x = 0
+	x+=5
+	function loop() {
+		requestAnimationFrame(loop)
+		document.getElementById('gear').style.transform = 'rotate('+x+'deg)';
+		x++
+	}
+	loop()
+</script>
+
+</body>
+</html>
